@@ -1,68 +1,180 @@
 /*importação de fontes*/
-<style>
-body{
-    margin: 0px;
-    padding: 0px;
+:root{
+    --az : #0c70f2;
+    --pt : #303030;
+    --cz : #c9c9c9;
+    --fp : 'inter';
 }
-#principal {
-    display: flex;
-    width: 100%;
-    height: 103px;
-    left: 0px;
-    top: 0px;
-    border:1px solid black;
-    background: #303030;
-    justify-content: space-between;
-    align-items: center;
-    border-bottom: 1px solid #bababa;
-    
-}
-#principal div a{
-    text-decoration: none;
-    font-style:normal ;
-    font-family:'Inter';
+
+    body{
+        margin: 0px;
+        padding: 0px;
+        
+        width: 100%;
+        height: 2206px;
+        left: 0px;
+        top: 103px;
+
+        background: linear-gradient(180deg, rgba(12, 112, 242, 0.5) 30%, rgba(12, 112, 242, 0) 35%), #303030;
+    }
+    #principal {
+        display: flex;
+        width: 100%;
+        height: 103px;
+        left: 0px;
+        top: 0px;
+        border:1px solid black;
+        background: var(--pt);
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 1px solid #bababa;
+        
+    }
+    #principal div a{
+        text-decoration: none;
+        font-style:normal ;
+        font-family:'Inter';
+        font-style: normal;
+        font-weight:600;
+        font-size:20px;
+        line-height:31px;            
+        color: #FFFFFF;            
+    }
+
+    #principal div a:hover{
+        color: #bababa;
+    }
+
+    #menu{
+        display: flex;
+        width: 55%;
+        justify-content: space-around;
+        align-items: center;
+        margin-left: 5%;
+    }
+    #principal button {
+    margin-right: 5%;
+    background-color: #0C70F2;
+    border: 0px;
+    width: 80px;
+    height: 39px;        
+    width: 95px;
+    height: 25px;
+    left: 1258px;
+    top: 38px;
+    box-shadow: 3px 2px 4px rgba(230, 233, 236, 0.25);
+    margin-top: 7px;
+    margin-bottom: 7px;
+    font-family: 'Inter';
     font-style: normal;
-    font-weight:600;
-    font-size:20px;
-    line-height:31px;            
-    color: #FFFFFF;            
-}
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 24px;
+    color: #FFFFFF;
+    align-items: center;  
+    cursor: pointer;    
+    margin-right: 10%;  
+    }
 
-#principal div a:hover{
+    #principal button:hover{
     color: #bababa;
-}
+    }
 
-#menu{
+
+  section {
     display: flex;
-    width: 55%;
-    justify-content: space-around;
+    flex-direction: column;
     align-items: center;
-    margin-left: 5%;
-}
-#principal button {
-margin-right: 5%;
-background-color: #0C70F2;
-border: 0px;
-width: 80px;
-height: 39px;        
-width: 95px;
-height: 25px;
-left: 1258px;
-top: 38px;
-box-shadow: 3px 2px 4px rgba(230, 233, 236, 0.25);
-margin-top: 7px;
-margin-bottom: 7px;
-font-family: 'Inter';
-font-style: normal;
-font-weight: 600;
-font-size: 15px;
-line-height: 24px;
-color: #FFFFFF;
-align-items: center;  
-cursor: pointer;      
-}
+    margin-top: 100px;
+    color: white;
+    font-family: var(--fp);
 
-#principal button:hover{
-color: #bababa;
+  }  
+
+  header h1 {
+
+    font-weight: 800;
+    font-size: 80px;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+
+  header h2 {
+    text-align: center;
+    font-size: 40px;
+    font-weight: 700px;
+    margin-bottom: 200px;
+  }
+  header .fundo {
+    background-color: black;
+    font-weight: bold;
+    padding: 5px;
+
+  }
+
+  /*formulario*/
+
+  form {
+    font-weight: 600;
+    font-size: 30px;
+    width: 630px;
+  }
+
+  .formg {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  form input{
+    border-radius: 10px;
+    height: 44px;
+    border: 0;
+    font-size: 20px;
+    padding: 10px;
+    background-color: rgba(355, 255, 255e, 0.9a);
+
+
+  }
+  form label{
+    margin: 10px 0px 10px 0px;
+  }
+
+  form input::placeholder{
+    color: rgba(57,57,57,0.5);
+  }
+.checkbox label{
+    font-size: 25px;
 }
-<style>
+.checkbox{
+   display: flex; 
+   justify-content: space-around;
+   align-items: center;
+}
+input[type="checkbox"]{
+    transform: scale(1.7);
+}
+input[type="submit"]{
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 39px;
+    /* identical to box height */
+    
+    
+    color: #FFFFFF;
+    
+
+    margin-top: 82px;
+    width: 630px;
+    height: 56px;
+    left: 405px;
+    top: 1465px;
+background: rgba(12, 112, 242, 0.9);
+box-shadow: 0px 6px 4px rgba(12, 112, 242, 0.25);
+border-radius: 10px;
+cursor: pointer;
+}
